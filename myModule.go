@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"runtime"
+)
 
-func main() {
-	fmt.Println("Module stuff ")
+func Version() {
+	fmt.Println("Using go version ", runtime.Version())
 }
